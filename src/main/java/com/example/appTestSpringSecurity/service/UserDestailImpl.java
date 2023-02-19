@@ -1,20 +1,28 @@
 package com.example.appTestSpringSecurity.service;
 
+
 import com.example.appTestSpringSecurity.Domain.Usuario;
-import com.example.appTestSpringSecurity.repository.UsuarioRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+
 import java.util.Collection;
+import java.util.List;
 import java.util.stream.Collectors;
+
 
 public class UserDestailImpl implements UserDetails {
 
-private Usuario usuario;
+    private Usuario usuario;
+
+    public UserDestailImpl(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return usuario.getRoles().stream().map(UserAuthorityCustumer::new).collect(Collectors.toList());
+        return usuario.getAuthorities().stream().map(SecurityAutority::new).collect(Collectors.toList());
     }
 
     @Override
@@ -29,21 +37,21 @@ private Usuario usuario;
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     }
 }
