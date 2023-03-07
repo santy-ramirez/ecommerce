@@ -1,9 +1,8 @@
 package com.example.appTestSpringSecurity.controller.util;
 
-import com.example.appTestSpringSecurity.controller.util.ERole;
+
 import com.example.appTestSpringSecurity.Domain.Role;
 import com.example.appTestSpringSecurity.repository.RoleReposiory;
-import com.example.appTestSpringSecurity.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -13,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class Runner implements CommandLineRunner {
     private final RoleReposiory roleReposiory;
-    private final UsuarioRepository usuarioRepository;
+  
     @Override
     public void run(String... args) throws Exception {
     if(this.roleReposiory.count()==0){
