@@ -2,7 +2,12 @@ package com.example.appTestSpringSecurity.controller;
 
 
 import com.example.appTestSpringSecurity.Domain.Usuario;
+import com.example.appTestSpringSecurity.dto.UserDto;
+import com.example.appTestSpringSecurity.mapper.UserMapper;
 import com.example.appTestSpringSecurity.repository.UsuarioRepository;
+
+import lombok.RequiredArgsConstructor;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -15,18 +20,21 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("auth")
+@RequiredArgsConstructor
 public class UserController {
-@Autowired
 
-private PasswordEncoder passwordEncoder;
-    @Autowired
-    UsuarioRepository usuarioRepository;
 
+private final PasswordEncoder passwordEncoder;
+    
+  private final UsuarioRepository usuarioRepository;
+    
+   private final UserMapper userMapper;
 
     @PostMapping("register")
-    public ResponseEntity<?> registerUser(@RequestBody Usuario usuario){
+    public ResponseEntity<?> registerUser(@RequestBody UserDto usuario){
     usuario.setPassword(passwordEncoder.encode(usuario.getPassword()));
-    usuarioRepository.save(usuario);
+   Usuario usuaEntety =  userMapper.userDtoToUser(usuario);
+    usuarioRepository.save(usuaEntety);
    return ResponseEntity.ok("correct");
     }
     

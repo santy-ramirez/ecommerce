@@ -1,7 +1,8 @@
 package com.example.appTestSpringSecurity.repository;
 
-import com.example.appTestSpringSecurity.controller.util.ERole;
 import com.example.appTestSpringSecurity.Domain.Role;
+import com.example.appTestSpringSecurity.util.ERole;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

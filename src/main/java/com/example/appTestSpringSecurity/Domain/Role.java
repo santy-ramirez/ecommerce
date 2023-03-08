@@ -1,6 +1,7 @@
 package com.example.appTestSpringSecurity.Domain;
 
-import com.example.appTestSpringSecurity.controller.util.ERole;
+import com.example.appTestSpringSecurity.util.ERole;
+
 import jakarta.persistence.*;
 import lombok.*;
 
