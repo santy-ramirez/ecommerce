@@ -4,6 +4,7 @@ package com.example.appTestSpringSecurity.mapper;
 
 import com.example.appTestSpringSecurity.Domain.Role;
 import com.example.appTestSpringSecurity.Domain.Usuario;
+import com.example.appTestSpringSecurity.dto.ResponseUserDto;
 import com.example.appTestSpringSecurity.dto.UserDto;
 import com.example.appTestSpringSecurity.util.ERole;
 import org.mapstruct.Mapper;
@@ -42,4 +43,5 @@ public interface UserMapper {
             return roles;
  }
 
+ ResponseUserDto UserToResponseUserDto(Usuario usuario);
 }
