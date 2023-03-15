@@ -5,12 +5,11 @@ import com.example.appTestSpringSecurity.util.ERole;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Getter
-@Setter
-@RequiredArgsConstructor
-@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "roles")
+@NoArgsConstructor
+@RequiredArgsConstructor
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -10,12 +10,10 @@ import java.util.List;
 
 @Entity
 @Table(name = "users")
-@Setter
-@Getter
-@AllArgsConstructor
+@Data
 @NoArgsConstructor
 public class Usuario {
-    @jakarta.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
 
