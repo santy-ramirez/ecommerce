@@ -1,15 +1,14 @@
-package com.example.appTestSpringSecurity.controller;
+package com.example.appEcomerce.controller;
 
 
-import com.example.appTestSpringSecurity.Domain.Usuario;
-import com.example.appTestSpringSecurity.dto.ResponseUserDto;
-import com.example.appTestSpringSecurity.dto.UserDto;
-import com.example.appTestSpringSecurity.mapper.UserMapper;
-import com.example.appTestSpringSecurity.repository.UsuarioRepository;
+import com.example.appEcomerce.Domain.Usuario;
+import com.example.appEcomerce.dto.ResponseUserDto;
+import com.example.appEcomerce.dto.UserDto;
+import com.example.appEcomerce.mapper.UserMapper;
+import com.example.appEcomerce.repository.UsuarioRepository;
 
 import lombok.RequiredArgsConstructor;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;

@@ -1,6 +1,6 @@
-package com.example.appTestSpringSecurity.service;
+package com.example.appEcomerce.service;
 
-import com.example.appTestSpringSecurity.Domain.Role;
+import com.example.appEcomerce.Domain.Role;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 

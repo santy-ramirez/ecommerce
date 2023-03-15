@@ -1,12 +1,12 @@
-package com.example.appTestSpringSecurity.mapper;
+package com.example.appEcomerce.mapper;
 
 
 
-import com.example.appTestSpringSecurity.Domain.Role;
-import com.example.appTestSpringSecurity.Domain.Usuario;
-import com.example.appTestSpringSecurity.dto.ResponseUserDto;
-import com.example.appTestSpringSecurity.dto.UserDto;
-import com.example.appTestSpringSecurity.util.ERole;
+import com.example.appEcomerce.Domain.Role;
+import com.example.appEcomerce.Domain.Usuario;
+import com.example.appEcomerce.dto.ResponseUserDto;
+import com.example.appEcomerce.dto.UserDto;
+import com.example.appEcomerce.util.ERole;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
@@ -21,7 +21,7 @@ public interface UserMapper {
     @Mapping(target="authorities" ,source = "authoritie", qualifiedByName = "mapItems")
     
   })
-    Usuario userDtoToUser(UserDto userDto);
+  Usuario userDtoToUser(UserDto userDto);
  @Named("mapItems")
   default List<Role> map(Long value){
    Role rol = new Role();

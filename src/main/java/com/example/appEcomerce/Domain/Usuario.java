@@ -1,4 +1,4 @@
-package com.example.appTestSpringSecurity.Domain;
+package com.example.appEcomerce.Domain;
 
 import jakarta.persistence.*;
 import lombok.*;

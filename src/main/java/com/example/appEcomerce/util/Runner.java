@@ -1,8 +1,8 @@
-package com.example.appTestSpringSecurity.util;
+package com.example.appEcomerce.util;
 
 
-import com.example.appTestSpringSecurity.Domain.Role;
-import com.example.appTestSpringSecurity.repository.RoleReposiory;
+import com.example.appEcomerce.Domain.Role;
+import com.example.appEcomerce.repository.RoleReposiory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

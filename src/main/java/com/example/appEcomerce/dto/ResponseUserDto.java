@@ -1,4 +1,4 @@
-package com.example.appTestSpringSecurity.dto;
+package com.example.appEcomerce.dto;
 
 import lombok.Data;
 

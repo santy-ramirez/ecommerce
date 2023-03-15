@@ -1,4 +1,4 @@
-package com.example.appTestSpringSecurity.controller;
+package com.example.appEcomerce.controller;
 
 
 import org.springframework.web.bind.annotation.*;

@@ -1,7 +1,7 @@
-package com.example.appTestSpringSecurity.service;
+package com.example.appEcomerce.service;
 
 
-import com.example.appTestSpringSecurity.Domain.Usuario;
+import com.example.appEcomerce.Domain.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

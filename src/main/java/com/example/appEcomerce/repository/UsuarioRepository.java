@@ -1,6 +1,6 @@
-package com.example.appTestSpringSecurity.repository;
+package com.example.appEcomerce.repository;
 
-import com.example.appTestSpringSecurity.Domain.Usuario;
+import com.example.appEcomerce.Domain.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

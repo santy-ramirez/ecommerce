@@ -1,6 +1,6 @@
-package com.example.appTestSpringSecurity.Domain;
+package com.example.appEcomerce.Domain;
 
-import com.example.appTestSpringSecurity.util.ERole;
+import com.example.appEcomerce.util.ERole;
 
 import jakarta.persistence.*;
 import lombok.*;

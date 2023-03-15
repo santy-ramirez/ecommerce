@@ -1,4 +1,4 @@
-package com.example.appTestSpringSecurity.util;
+package com.example.appEcomerce.util;
 
 public enum ERole {
     READ,WRITE,ADMIN

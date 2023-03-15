@@ -1,8 +1,8 @@
-package com.example.appTestSpringSecurity.service;
+package com.example.appEcomerce.service;
 
 
-import com.example.appTestSpringSecurity.Domain.Usuario;
-import com.example.appTestSpringSecurity.repository.UsuarioRepository;
+import com.example.appEcomerce.Domain.Usuario;
+import com.example.appEcomerce.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
