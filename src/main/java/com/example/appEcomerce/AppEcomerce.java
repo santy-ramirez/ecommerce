@@ -1,4 +1,4 @@
-package com.example.appTestSpringSecurity;
+package com.example.appEcomerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
