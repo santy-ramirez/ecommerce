@@ -41,10 +41,9 @@ public class SecurityWebConfig {
                 exceptionHandling().authenticationEntryPoint(authEntryPointJwt).and().
                 sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().
                 authorizeHttpRequests(auth ->
-                        auth.requestMatchers("/auth/**").permitAll()
-                ).authorizeHttpRequests(auth ->
-                        auth.anyRequest().authenticated()
-                        );
+                        auth.requestMatchers("/auth/**", "/products").permitAll().
+                                anyRequest().authenticated()
+                );
         http.headers().frameOptions().sameOrigin();
         http.authenticationProvider(daoAuthenticationProviderq());
         http.addFilterBefore(authTokenFilter(), UsernamePasswordAuthenticationFilter.class);
