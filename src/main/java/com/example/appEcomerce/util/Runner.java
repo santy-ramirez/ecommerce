@@ -23,12 +23,5 @@ public class Runner implements CommandLineRunner {
         ));
     }
 
-  /* if(this.usuarioRepository.count()==0){
-       this.usuarioRepository.saveAll(
-               List.of(
-                       new Usuario("hola","123",List.of(this.roleReposiory.findByName(ERole.WRITE).get()))
-               )
-       )
-   }*/
 }
 }
