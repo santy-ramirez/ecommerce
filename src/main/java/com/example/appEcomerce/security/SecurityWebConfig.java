@@ -41,7 +41,7 @@ public class SecurityWebConfig {
                 exceptionHandling().authenticationEntryPoint(authEntryPointJwt).and().
                 sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().
                 authorizeHttpRequests(auth ->
-                        auth.requestMatchers("/auth/**", "/products").permitAll().
+                        auth.requestMatchers("/auth/**", "/products/**").permitAll().
                                 anyRequest().authenticated()
                 );
         http.headers().frameOptions().sameOrigin();

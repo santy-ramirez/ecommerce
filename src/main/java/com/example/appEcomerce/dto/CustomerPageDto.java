@@ -16,5 +16,5 @@ public class CustomerPageDto {
     private int pageSize;
     private int pageNo;
     private boolean last;
-    private List<ProductDto> content;
+    private List<?> content;
 }
