@@ -33,7 +33,7 @@ public class Usuario {
     @JoinTable(name = "user_products",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "products_id"))
-    private Set<Producs> producs = new HashSet<>();
+    private Set<Products> producs = new HashSet<>();
 
 
 

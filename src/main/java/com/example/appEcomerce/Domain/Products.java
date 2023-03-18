@@ -2,14 +2,14 @@ package com.example.appEcomerce.Domain;
 
 import com.example.appEcomerce.util.ECategory;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 @Entity
 @Data
-@AllArgsConstructor
-public class Producs {
+@NoArgsConstructor
+public class Products {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
