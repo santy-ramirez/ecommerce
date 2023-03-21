@@ -1,13 +1,13 @@
-package com.example.appTestSpringSecurity;
+package com.example.appEcomerce;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AppTutuApplicationTests {
+class AppEcomerceTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    public void contextLoads() {
+    }
 
 }
