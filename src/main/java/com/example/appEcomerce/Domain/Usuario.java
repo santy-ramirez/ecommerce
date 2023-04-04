@@ -1,5 +1,6 @@
 package com.example.appEcomerce.Domain;
 
+import com.example.appEcomerce.util.ERole;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -29,11 +30,8 @@ public class Usuario {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private List<Role> authorities = new ArrayList<>();
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "user_products",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "products_id"))
-    private Set<Products> producs = new HashSet<>();
+
+
 
 
 
